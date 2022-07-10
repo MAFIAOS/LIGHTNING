@@ -6,6 +6,8 @@ RUN apt-get -y update
 
 RUN apt-get -y install git gcc python3-dev
 
+RUN pip install --upgrade pip
+
 RUN pip install --upgrade setuptools
 
 RUN pip install ez_setup
