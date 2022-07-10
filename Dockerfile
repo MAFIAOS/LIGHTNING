@@ -19,6 +19,8 @@ RUN pip install cython
 
 
 RUN pip3 install lxml
+RUN pip3 install libxml2
+RUN pip3 install libxslt
 
 COPY requirements.txt requirements.txt
 
