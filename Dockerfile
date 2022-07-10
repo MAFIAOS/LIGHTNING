@@ -47,6 +47,7 @@ RUN apt-get install -y\
     libfreetype6-dev \
     procps \
     policykit-1
+RUN pin install numpy
 RUN pip install ez_setup    
 
 #Gemt Some Fumks
