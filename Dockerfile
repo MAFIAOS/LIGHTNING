@@ -14,9 +14,9 @@ RUN pip install ez_setup
 
 RUN pip install cython
 
-RUN pkg install libxml2-dev libxslt-dev libiconv-dev
 
-RUN pip install git+https://github.com/lxml/lxml
+
+
 
 RUN pip3 install cython git+https://github.com/lxml/lxml
 
