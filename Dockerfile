@@ -21,7 +21,8 @@ RUN pip install cython
 RUN pip3 install lxml
 RUN apt-get install sudo
 RUN sudo apt-get install libxml2
-RUN pip3 install libxslt
+
+RUN sudo apt-get install libxslt
 
 COPY requirements.txt requirements.txt
 
