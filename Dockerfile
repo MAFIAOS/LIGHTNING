@@ -6,9 +6,9 @@ RUN apt-get -y update
 
 RUN apt-get -y install git gcc python3-dev
 
-RUN apt-get install libxml2-dev libxslt1-dev python-dev 
+RUN pip install git+https://github.com/lxml/lxml
 
-RUN pip3 install lxml
+RUN pip3 install cython git+https://github.com/lxml/lxml
 
 COPY requirements.txt requirements.txt
 
