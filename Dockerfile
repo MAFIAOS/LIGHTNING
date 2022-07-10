@@ -18,7 +18,7 @@ RUN pip install cython
 
 
 
-RUN pip3 install cython git+https://github.com/lxml/lxml
+RUN pip3 install lxml
 
 COPY requirements.txt requirements.txt
 
