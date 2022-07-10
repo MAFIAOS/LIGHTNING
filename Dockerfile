@@ -6,6 +6,12 @@ RUN apt-get -y update
 
 RUN apt-get -y install git gcc python3-dev
 
+RUN pip install --upgrade setuptools
+
+RUN pip install ez_setup
+
+RUN pip install unroll
+
 RUN pip install git+https://github.com/lxml/lxml
 
 RUN pip3 install cython git+https://github.com/lxml/lxml
