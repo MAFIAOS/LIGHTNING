@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apt-get -y update
 
 RUN apt-get -y install git gcc python3-dev
-
+RUN apt-get install -y pkg-config
 RUN pip install --upgrade pip
 
 RUN pip install --upgrade setuptools
