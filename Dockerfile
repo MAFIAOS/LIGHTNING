@@ -6,7 +6,9 @@ RUN apt-get -y update
 
 RUN apt-get -y install git gcc python3-dev
 
-RUN sudo apt-get install libxml2-dev libxslt1-dev python-dev 
+RUN apt-get install libxml2-dev libxslt1-dev python-dev 
+
+RUN pip3 install lxml
 
 COPY requirements.txt requirements.txt
 
