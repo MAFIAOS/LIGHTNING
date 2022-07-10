@@ -23,7 +23,7 @@ RUN pip3 install lxml
 
 RUN apt-get install libxml2
 
-RUN pip install libxslt
+
 
 COPY requirements.txt requirements.txt
 
