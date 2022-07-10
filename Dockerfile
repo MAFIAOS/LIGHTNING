@@ -17,7 +17,7 @@ RUN pip install cython
 
 RUN pip3 install numpy
 
-
+RUN pip install psycopg2-binary
 
 RUN pip3 install lxml
 
