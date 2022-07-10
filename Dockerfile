@@ -16,6 +16,7 @@ RUN pip install ez_setup
 RUN pip install cython
 
 RUN pip3 install numpy
+RUN apt-get install -y libpq-dev python-dev 
 
 RUN pip install psycopg2-binary
 
