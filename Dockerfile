@@ -47,8 +47,8 @@ RUN apt-get install -y\
     libfreetype6-dev \
     procps \
     policykit-1
-RUN pin install numpy
-RUN pip install ez_setup    
+RUN pip3 install numpy
+RUN pip3 install ez_setup    
 
 #Gemt Some Fumks
 RUN axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
