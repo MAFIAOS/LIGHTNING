@@ -1,7 +1,7 @@
 FROM userbotnew/lightning:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/MafiaOS/lightning.git /root/userbot
+RUN git clone https://github.com/userbotnew/lightning.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
