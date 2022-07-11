@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apt-get -y update
 RUN apt install sudo
 
-RUN apt-get install python3.10
+RUN apt-get -y install python3.10
 
 COPY requirements.txt requirements.txt
 
