@@ -10,6 +10,7 @@ RUN apt-get install -y pkg-config
 RUN pip install --upgrade pip
 
 RUN pip install --upgrade setuptools
+RUN pip install -y upgrade wheel 
 
 RUN pip install ez_setup
 
