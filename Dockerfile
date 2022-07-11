@@ -25,7 +25,7 @@ RUN pip3 install lxml
 RUN apt-get install libxml2
 
 RUN apt-get  -y install libxslt1-dev
-
+RUN pip install opencv-contrib-python-headless
 COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
