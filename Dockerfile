@@ -1,7 +1,7 @@
-FROM userbotnew/lightning:slim-buster
+FROM sandy1709/catuserbot:alpine
 
 #clonning repo 
-RUN git clone https://github.com/userbotnew/lightning.git /root/userbot
+RUN git clone https://github.com/MafiaOs/lightning.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
