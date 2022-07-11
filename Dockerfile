@@ -1,13 +1,27 @@
 FROM python:3.10-slim-buster
 
-#clonning repo 
-RUN git clone https://github.com/MafiaOs/lightning.git /root/userbot
-#working directory 
-WORKDIR /root/userbot
+WORKDIR /app
 
-# Install requirements
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN apt-get -y update
 
-ENV PATH="/home/userbot/bin:$PATH"
+RUN apt-get -y install git gcc python3-dev
 
-CMD ["python3","lightningrun.py"]
+COPY requirements.txt requirements.txt
+
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+CMD [ "python3", "lightning.py"]
+
+
+
+
+
+
+
+
+
+
+
+
