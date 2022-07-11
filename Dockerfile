@@ -9,7 +9,7 @@ RUN apt-get -y update
 
 COPY requirements.txt requirements.txt
 
-RUN apt-get install -r requirements.txt
+RUN apt-get install requirements.txt
 
 COPY . .
 
