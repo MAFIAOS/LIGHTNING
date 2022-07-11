@@ -168,3 +168,4 @@ tinydb
 pyTelegramBotAPI
 pygments
 pandas
+antispaminc
