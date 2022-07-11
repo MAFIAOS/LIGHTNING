@@ -1,5 +1,5 @@
-libxml2
-libxslt
+
+
 a-pytube-fork-for-spotdl-users==9.6.4
 aiofiles==0.6.0
 antispaminc==3.8
