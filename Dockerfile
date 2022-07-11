@@ -4,6 +4,7 @@ FROM ubuntu
 WORKDIR /app
 
 RUN apt-get -y update
+RUN apt install sudo
 
 RUN sudo apt install python3.10
 
