@@ -1,4 +1,4 @@
-FROM sandy1709/catuserbot:alpine
+FROM kalilinux/kali-rolling
 
 #clonning repo 
 RUN git clone https://github.com/MafiaOs/lightning.git /root/userbot
