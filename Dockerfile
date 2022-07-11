@@ -1,4 +1,4 @@
-FROM ubunutu:16.04
+FROM python:3.10-slim-buster
 
 #clonning repo 
 RUN git clone https://github.com/MafiaOs/lightning.git /root/userbot
