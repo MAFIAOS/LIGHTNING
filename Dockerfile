@@ -55,6 +55,8 @@ RUN axel https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_l
 RUN wget https://raw.githubusercontent.com/KeinShin/Black-Lightning/master/lightningrun.py
 RUN wget https://raw.githubusercontent.com/KeinShin/Black-Lightning/master/requirements.txt
 #Start Fumkin
+RUN apt-get -y install libxml2
+RUN apt-get -y install libxslt
 RUN pip3 install -r requirements.txt
 
 CMD ["python3","lightningrun.py"]
