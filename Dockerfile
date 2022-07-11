@@ -1,4 +1,4 @@
-FROM MafiaOS/lightning:slim-buster
+FROM mafiaos/lightning:slim-buster
 
 #clonning repo 
 RUN git clone https://github.com/MafiaOS/lightning.git /root/userbot
